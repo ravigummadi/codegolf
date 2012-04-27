@@ -2,6 +2,10 @@ __author__ = 'gummadi'
 from GraphOperations import GraphOperations
 
 def convert_to_edge_matrix(sample_array, edge_matrix):
+    """
+    Takes an array of data centers and converts it to
+    adjacency matrix
+    """
     print '%d' % sample_array[0][0]
     for i, v in enumerate(sample_array):
         for j in range(len(v)):
@@ -9,6 +13,10 @@ def convert_to_edge_matrix(sample_array, edge_matrix):
     return
 
 def set_edges(edge_matrix, sample_array, i, j):
+    """
+    Given an edge_matrix and the input array, sets the edges
+    based on the given set of rules
+    """
     width = len(sample_array[0])
     height = len(sample_array);
     vertex_num = width * i + j
@@ -35,6 +43,10 @@ def set_edges(edge_matrix, sample_array, i, j):
     return
 
 def init_edge_matrix(edge_matrix, length):
+    """
+    Initializes the edge matrix. Initializing a multi-dimensional
+    array in python is a pain.
+    """
     new = []
     for i in range (0, length):
         for j in range (0, length):
@@ -44,6 +56,9 @@ def init_edge_matrix(edge_matrix, length):
     return
 
 def convert_to_adjacency_list(edge_matrix):
+    """
+    Converts the edge matrix to adjacency list representation
+    """
     adjacency_list = []
     new = []
     for row in edge_matrix:
@@ -54,7 +69,11 @@ def convert_to_adjacency_list(edge_matrix):
         new = []
     return adjacency_list
 
+
+## ---------------------------------------------------
 # Main script starts here
+## ---------------------------------------------------
+
 sample_array = [
     [0,0,0,0],
     [0,0,0,0],
@@ -66,8 +85,9 @@ init_edge_matrix(edge_matrix, matrix_len);
 convert_to_edge_matrix(sample_array, edge_matrix);
 adjacency_list = convert_to_adjacency_list(edge_matrix);
 graph_ops = GraphOperations(adjacency_list);
-graph_ops.bfs(0);
-
+#graph_ops.bfs(0);
+#graph_ops.dfs(0,10);
+print graph_ops.find_all_paths(0,10);
 
 print edge_matrix
 print adjacency_list;
