@@ -1,4 +1,5 @@
 __author__ = 'gummadi'
+from GraphOperations import GraphOperations
 
 def convert_to_edge_matrix(sample_array, edge_matrix):
     print '%d' % sample_array[0][0]
@@ -42,15 +43,34 @@ def init_edge_matrix(edge_matrix, length):
         new = []
     return
 
+def convert_to_adjacency_list(edge_matrix):
+    adjacency_list = []
+    new = []
+    for row in edge_matrix:
+        for i,v in enumerate(row):
+            if v == 1:
+                new.append(i)
+        adjacency_list.append(new)
+        new = []
+    return adjacency_list
+
+# Main script starts here
 sample_array = [
     [0,0,0,0],
     [0,0,0,0],
     [0,0,0,1]
 ];
 edge_matrix = [];
-init_edge_matrix(edge_matrix, 12);
+matrix_len = len(sample_array[0])*len(sample_array);
+init_edge_matrix(edge_matrix, matrix_len);
 convert_to_edge_matrix(sample_array, edge_matrix);
+adjacency_list = convert_to_adjacency_list(edge_matrix);
+graph_ops = GraphOperations(adjacency_list);
+graph_ops.bfs(0);
+
+
 print edge_matrix
+print adjacency_list;
 
 
 
