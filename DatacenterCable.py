@@ -73,24 +73,42 @@ def convert_to_adjacency_list(edge_matrix):
 ## ---------------------------------------------------
 # Main script starts here
 ## ---------------------------------------------------
+def main():
+#    sample_array = [
+#        [0,0,0,0],
+#        [0,0,0,0],
+#        [0,0,0,1]
+#    ];
+    sample_array = [
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 1, 1]
+    ];
+    edge_matrix = [];
+    matrix_len = len(sample_array[0])*len(sample_array)
+    init_edge_matrix(edge_matrix, matrix_len)
+    convert_to_edge_matrix(sample_array, edge_matrix)
+    adjacency_list = convert_to_adjacency_list(edge_matrix)
+    print edge_matrix
+    print adjacency_list
+    graph_ops = GraphOperations(adjacency_list)
+    all_paths = graph_ops.find_all_paths(0,49)
+    count = 0
+    for path in all_paths:
+        if(len(path)==54):
+            count = count + 1
+    print 'Total number of paths covering all paths is: %d' % count
 
-sample_array = [
-    [0,0,0,0],
-    [0,0,0,0],
-    [0,0,0,1]
-];
-edge_matrix = [];
-matrix_len = len(sample_array[0])*len(sample_array);
-init_edge_matrix(edge_matrix, matrix_len);
-convert_to_edge_matrix(sample_array, edge_matrix);
-adjacency_list = convert_to_adjacency_list(edge_matrix);
-graph_ops = GraphOperations(adjacency_list);
-#graph_ops.bfs(0);
-#graph_ops.dfs(0,10);
-print graph_ops.find_all_paths(0,10);
 
-print edge_matrix
-print adjacency_list;
+if __name__ == "__main__":
+    main()
+
+
 
 
 

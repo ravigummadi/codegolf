@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fc999e5-a459-417e-beaf-e745cf1edf2c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AStarChess.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AStarSearch.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DatacenterCable.py" afterPath="$PROJECT_DIR$/DatacenterCable.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraphOperations.py" afterPath="$PROJECT_DIR$/GraphOperations.py" />
     </list>
     <ignored path="codegolf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DatacenterCable.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DatacenterCable.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DatacenterCable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="18" selection-start="2719" selection-end="2741" vertical-scroll-proportion="0.0">
+            <state line="110" column="0" selection-start="3332" selection-end="3332" vertical-scroll-proportion="0.7266055">
               <folding />
             </state>
           </provider>
@@ -44,30 +40,8 @@
       <file leaf-file-name="GraphOperations.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GraphOperations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="16" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.0">
+            <state line="86" column="22" selection-start="2694" selection-end="2694" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AStarSearch.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AStarSearch.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="29" selection-start="3309" selection-end="3309" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#205#215#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AStarChess.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AStarChess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="20" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.19266056">
-              <folding>
-                <element signature="e#229#239#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -355,35 +329,17 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DatacenterCable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="18" selection-start="2719" selection-end="2741" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphOperations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="16" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.0">
+        <state line="86" column="22" selection-start="2694" selection-end="2694" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AStarSearch.py">
+    <entry file="file://$PROJECT_DIR$/DatacenterCable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="29" selection-start="3309" selection-end="3309" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#205#215#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AStarChess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="20" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.19266056">
-          <folding>
-            <element signature="e#229#239#0" expanded="true" />
-          </folding>
+        <state line="110" column="0" selection-start="3332" selection-end="3332" vertical-scroll-proportion="0.7266055">
+          <folding />
         </state>
       </provider>
     </entry>
